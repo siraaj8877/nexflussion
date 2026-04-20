@@ -1,132 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexflussion | Consulting Firm</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexfussion | Global Consulting & Transformation Firm</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
 
-<!-- HEADER -->
-<header class="bg-white shadow p-4">
-  <div class="max-w-6xl mx-auto flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-blue-600">Nexflussion</h1>
+<!-- TOP BAR -->
+<div class="bg-blue-900 text-white text-sm py-2">
+  <div class="max-w-7xl mx-auto px-6 flex justify-between">
+    <p>Global Consulting • Strategy • Digital Transformation • Operations Excellence</p>
+    <p>info@nexfussion.com</p>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <svg width="42" height="42" viewBox="0 0 100 100">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#1d4ed8"/>
+            <stop offset="100%" stop-color="#22c55e"/>
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="50" r="46" fill="url(#logoGrad)" />
+        <path d="M30 65 L30 35 L50 65 L50 35 L70 65 L70 35"
+              stroke="white" stroke-width="6"
+              fill="none" stroke-linecap="round"/>
+      </svg>
+
+      <h1 class="text-2xl font-bold text-blue-700 tracking-wide">
+        Nexfussion
+      </h1>
+    </div>
+
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a href="#home" class="hover:text-blue-700">Home</a>
+      <a href="#about" class="hover:text-blue-700">About</a>
+      <a href="#services" class="hover:text-blue-700">Services</a>
+      <a href="#impact" class="hover:text-blue-700">Impact</a>
+      <a href="#team" class="hover:text-blue-700">Team</a>
+      <a href="#contact" class="hover:text-blue-700">Contact</a>
+    </nav>
+
   </div>
 </header>
 
 <!-- HERO -->
-<section class="text-center py-16 bg-blue-600 text-white">
-  <h2 class="text-4xl font-bold">Nexflussion Consulting Firm</h2>
-  <p class="mt-4">Technology • Business Strategy • HRM • Health & Safety • Digital Transformation • Supply Chain</p>
+<section id="home" class="bg-gradient-to-br from-blue-900 via-blue-700 to-indigo-800 text-white py-28">
+  <div class="max-w-5xl mx-auto text-center px-6">
+    <h2 class="text-5xl md:text-6xl font-bold mb-6">
+      Global Consulting for Sustainable Growth
+    </h2>
+    <p class="text-lg md:text-xl text-blue-100 mb-10">
+      Nexfussion partners with governments, NGOs, donors, and enterprises to deliver high-impact solutions in Technology, HRM, Health & Safety, Digital Transformation, and Supply Chain Optimization.
+    </p>
+    <a href="#contact" class="bg-white text-blue-800 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-gray-100">
+      Request Consultation
+    </a>
+  </div>
 </section>
 
-<!-- WHO WE ARE -->
-<section class="max-w-6xl mx-auto p-6">
-  <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
-  <p>Nexflussion is a forward-thinking consulting firm delivering high-impact solutions across Africa. We bridge the gap between strategy and execution through innovation, technology, and people-centered approaches.</p>
-  <p class="mt-2">We help organizations transform operations, improve performance, and build sustainable growth systems in a rapidly changing digital economy.</p>
+<!-- ABOUT -->
+<section id="about" class="py-20 max-w-6xl mx-auto px-6">
+  <h2 class="text-4xl font-bold text-center mb-8">Who We Are</h2>
+  <p class="text-lg text-gray-700 text-center max-w-4xl mx-auto">
+    Nexfussion is a forward-thinking consulting firm delivering high-impact solutions across Africa and emerging markets. We bridge the gap between strategy and execution through innovation, technology, governance, and people-centered transformation.
+  </p>
 </section>
 
-<!-- EXPERTISE -->
-<section class="max-w-6xl mx-auto p-6">
-  <h2 class="text-3xl font-bold mb-6">Our Expertise</h2>
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Core Expertise</h2>
 
-  <div class="space-y-6">
+    <div class="grid md:grid-cols-3 gap-8">
 
-    <div>
-      <h3 class="text-xl font-bold">Technology Consulting</h3>
-      <p>We design and implement modern IT solutions that strengthen business performance and scalability.</p>
-      <ul class="list-disc ml-6">
-        <li>IT strategy development and roadmap planning</li>
-        <li>Cloud migration and architecture design</li>
-        <li>Systems integration</li>
-        <li>Cybersecurity advisory</li>
-      </ul>
-      <p><b>Outcome:</b> Improved efficiency, reduced costs, scalable digital systems.</p>
+      <div class="p-6 border rounded-2xl hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Technology Consulting</h3>
+        <p class="text-gray-600">IT strategy, cloud systems, cybersecurity, and digital infrastructure modernization.</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Business Strategy</h3>
+        <p class="text-gray-600">Corporate transformation, growth strategy, and market expansion advisory.</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Human Resource Management</h3>
+        <p class="text-gray-600">Workforce systems, HR digitalization, performance and talent development.</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Health & Safety</h3>
+        <p class="text-gray-600">Compliance systems, workplace safety audits, and risk management frameworks.</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Digital Transformation</h3>
+        <p class="text-gray-600">Automation, AI integration, data-driven systems, and digital governance.</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Supply Chain & Operations</h3>
+        <p class="text-gray-600">Logistics optimization, procurement systems, and operational excellence.</p>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <div>
-      <h3 class="text-xl font-bold">Business Strategy</h3>
-      <p>We help organizations define direction, improve performance, and achieve growth.</p>
-      <ul class="list-disc ml-6">
-        <li>Corporate strategy development</li>
-        <li>Business model innovation</li>
-        <li>Market expansion strategy</li>
-        <li>Organizational restructuring</li>
-      </ul>
-      <p><b>Outcome:</b> Clear direction and measurable growth.</p>
+<!-- IMPACT -->
+<section id="impact" class="py-20 bg-blue-50">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-10">Our Impact</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-4xl font-bold text-blue-700">50+</h3>
+        <p class="text-gray-600">Organizations Supported</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold text-blue-700">10+</h3>
+        <p class="text-gray-600">Countries Reached</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold text-blue-700">95%</h3>
+        <p class="text-gray-600">Client Satisfaction</p>
+      </div>
     </div>
-
-    <div>
-      <h3 class="text-xl font-bold">Human Resource Management</h3>
-      <p>We build strong workforce systems that attract and develop talent.</p>
-      <ul class="list-disc ml-6">
-        <li>HR policy development</li>
-        <li>Talent acquisition</li>
-        <li>Performance management</li>
-        <li>Training programs</li>
-      </ul>
-      <p><b>Outcome:</b> High-performing teams and strong HR systems.</p>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-bold">Health & Safety</h3>
-      <p>We support safe and compliant workplaces.</p>
-      <ul class="list-disc ml-6">
-        <li>Safety audits</li>
-        <li>Risk assessments</li>
-        <li>Safety policies</li>
-        <li>Emergency planning</li>
-      </ul>
-      <p><b>Outcome:</b> Safer workplaces and full compliance.</p>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-bold">Digital Transformation</h3>
-      <p>We enable digital and data-driven enterprises.</p>
-      <ul class="list-disc ml-6">
-        <li>Process automation</li>
-        <li>Digital strategy</li>
-        <li>Data analytics</li>
-        <li>AI integration</li>
-      </ul>
-      <p><b>Outcome:</b> Faster decisions and modern operations.</p>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-bold">Supply Chain & Operations</h3>
-      <p>We optimize operational systems for efficiency.</p>
-      <ul class="list-disc ml-6">
-        <li>Supply chain optimization</li>
-        <li>Procurement systems</li>
-        <li>Logistics planning</li>
-        <li>Process improvement</li>
-      </ul>
-      <p><b>Outcome:</b> Reduced costs and improved delivery.</p>
-    </div>
-
   </div>
 </section>
 
 <!-- TEAM -->
-<section class="max-w-6xl mx-auto p-6">
-  <h2 class="text-3xl font-bold mb-6">Our Team</h2>
+<section id="team" class="py-20 max-w-6xl mx-auto px-6">
+  <h2 class="text-4xl font-bold text-center mb-12">Leadership Team</h2>
 
-  <div class="space-y-4">
-    <p><b>Consultant 1 – Technology Expert:</b> Designs scalable IT systems, cloud architecture, and digital infrastructure solutions.</p>
-    <p><b>Consultant 2 – HR Specialist:</b> Focuses on talent management, HR systems, and organizational development.</p>
-    <p><b>Consultant 3 – Operations Expert:</b> Specializes in supply chain optimization, logistics, and operational efficiency.</p>
+  <div class="grid md:grid-cols-3 gap-8 text-center">
+
+    <div class="p-6 bg-white rounded-2xl shadow">
+      <h3 class="font-bold">Technology Expert</h3>
+      <p class="text-gray-600">Digital infrastructure & cloud systems</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-2xl shadow">
+      <h3 class="font-bold">HR Specialist</h3>
+      <p class="text-gray-600">Talent & organizational development</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-2xl shadow">
+      <h3 class="font-bold">Operations Expert</h3>
+      <p class="text-gray-600">Supply chain & efficiency systems</p>
+    </div>
+
   </div>
 </section>
 
-<!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/252634422097" 
-   target="_blank"
-   style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:999;">
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-10">Contact & Partnerships</h2>
+
+    <form action="https://formspree.io/f/xojylnbe" method="POST" class="bg-white p-8 rounded-2xl shadow grid gap-6">
+      <input type="text" name="name" placeholder="Full Name" class="p-4 border rounded-xl" required>
+      <input type="email" name="email" placeholder="Email Address" class="p-4 border rounded-xl" required>
+      <textarea name="message" placeholder="Tell us about your project" class="p-4 border rounded-xl" required></textarea>
+      <button class="bg-blue-700 text-white py-4 rounded-xl font-semibold hover:bg-blue-800">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/252634422097" target="_blank"
+   class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg font-semibold hover:bg-green-600">
    💬 WhatsApp
 </a>
+
+<!-- FOOTER -->
+<footer class="bg-blue-900 text-white text-center py-8">
+
+  <div class="flex justify-center items-center gap-3 mb-3">
+    <svg width="36" height="36" viewBox="0 0 100 100">
+      <defs>
+        <linearGradient id="logoGradFooter" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#1d4ed8"/>
+          <stop offset="100%" stop-color="#22c55e"/>
+        </linearGradient>
+      </defs>
+      <circle cx="50" cy="50" r="46" fill="url(#logoGradFooter)" />
+      <path d="M30 65 L30 35 L50 65 L50 35 L70 65 L70 35"
+            stroke="white" stroke-width="6"
+            fill="none" stroke-linecap="round"/>
+    </svg>
+
+    <span class="text-lg font-bold">Nexfussion</span>
+  </div>
+
+  <p>© 2026 Nexfussion Consulting. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
